@@ -1,0 +1,8 @@
+table {
+  border-collapse: collapse;
+}
+
+.widget {
+  display: inline;
+  zoom: 1;
+}

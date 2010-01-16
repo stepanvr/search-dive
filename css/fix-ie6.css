@@ -1,0 +1,11 @@
+h2 {
+  margin-top: expression( !this.previousSibling || ( this.previousSibling && this.previousSibling.nodeName === 'H1' ) ? 0 : '1em' );
+}
+
+h3 {
+  margin-top: expression( !this.previousSibling || ( this.previousSibling && this.previousSibling.nodeName.match(/^H[1-2]$/) ) ? 0 : '1em' );
+}
+
+#outer {
+  height: 100%;
+}

@@ -1,0 +1,332 @@
+/** Standard HTML elements */
+
+html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, form, table, td, th {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  font-size: 0.8em;
+  font-family: Arial, sans-serif;
+  line-height: 1.25;
+  background-color: #fff;
+}
+
+a {
+  color: #2e4f9d;
+}
+
+a:visited {
+  color: #990099;
+}
+
+a:hover, a:focus {
+  color: #cc0000 !important;
+}
+
+img {
+  border-width: 0;
+}
+
+p {
+  margin: 0 0 1.2em 0;
+}
+
+ul, dl {
+  margin: 0 0 1.2em 0;
+}
+
+ol {
+  margin: 0 0 1.2em 2.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 0 0 0.6em 0;
+}
+
+li ul, li ol {
+  margin: 0.6em 0 0 2.5em;
+}
+
+dt {
+  margin: 0;
+}
+
+dd {
+  margin: 0 0 0.6em 0;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0 0 0.2em 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 1em 0 0.5em 0;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 1em 0 0.5em 0;
+}
+
+h2:first-child, h3:first-child {
+  margin-top: 0;
+}
+
+h1 + h2, h1 + h3, h2 + h3 {
+  margin-top: 0;
+}
+
+table {
+  border-spacing: 0;
+  border: none;
+}
+
+td, th {
+  padding: 0;
+  border: none;
+  text-align: left;
+  vertical-align: top;
+}
+
+input, select, textarea {
+  font-size: 100%;
+}
+
+
+/** Standart presets */
+
+.width_fix {
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/** Layout */
+
+html, body {
+  height: 100%;
+}
+
+#outer {
+  min-height: 100%;
+}
+
+#header, #content, #footer {
+  width: 100%;
+  text-align: center;
+}
+
+#header {
+  padding: 10px 0 20px 0;
+  white-space: nowrap;
+}
+
+#search {
+  font-size: 1.25em;
+}
+
+#search input {
+  vertical-align: middle;
+}
+
+#search .q {
+  margin-right: 0.5em;
+}
+
+#content {
+  padding-bottom: 3em;
+}
+
+#footer {
+  height: 2em;
+  margin-top: -2em;
+}
+
+#copyright p {
+  margin: 0;
+}
+
+
+/** Corners */
+
+.corners {
+  -webkit-border-radius: 4px; /* WebKit (Safari/Chrome) */
+  -moz-border-radius: 4px;    /* Gecko (Firefox) */
+  border-radius: 4px;         /* Opera */
+}
+
+
+.widget {
+  position: relative;
+  background-color: #fff;
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  margin: 0 5px 10px 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+.widget_wrap {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.scrollable .widget_wrap {
+  overflow-y: scroll;
+}
+
+.loading .widget_wrap {
+  background: url(../i/loader.gif) 50% 50% no-repeat;
+}
+
+.widget_title {
+  position: absolute;
+  top: -0.7em;
+  left: 7px;
+  margin: 0;
+  padding: 0 3px;
+  background-color: #fff;
+  font-size: 0.85em;
+  cursor: move;
+}
+
+.widget_content {
+  padding-right: 10px;
+}
+
+.widget_holder {
+  padding-bottom: 1px;
+}
+
+.loading_more {
+  position: absolute;
+  bottom: -0.6em;
+  right: 37px;
+  margin: 0;
+  padding: 0 3px;
+  color: #ccc;
+  background-color: #fff;
+  font-size: 0.85em;
+}
+
+
+.red .widget_title {
+  color: #990000;
+}
+
+.orange .widget_title {
+  color: #b45f06;
+}
+
+.yellow .widget_title {
+  color: #bf9000;
+}
+
+.green .widget_title {
+  color: #38761d;
+}
+
+.aquamarine .widget_title {
+  color: #134f5c;
+}
+
+.blue .widget_title {
+  color: #0b5394;
+}
+
+
+form.translate {
+  margin: 0.6em 0 1.2em 0;
+}
+
+form.translate label {
+  margin-right: 0.35em;
+  vertical-align: middle;
+}
+
+form.translate select {
+  vertical-align: middle;
+}
+
+.translate_result {
+  font-size: 1.5em;
+}
+
+
+.news {
+  margin: 0;
+}
+
+.news li .title {
+  margin-bottom: 0.2em;
+}
+
+.news li .content {
+  font-size: 0.85em;
+}
+
+
+.search {
+  margin: 0;
+}
+
+.search li .title {
+  margin-bottom: 0.2em;
+}
+
+.search li .description {
+  font-size: 0.85em;
+  margin-bottom: 0.2em;
+}
+
+.search li .url {
+  font-size: 0.85em;
+  color: #006600;
+}
+
+
+.image {
+  margin: 0 0 0.6em 0;
+}
+
+.image .img {
+  margin: 0 0 0.2em 0;
+}
+
+.image .img img {
+  vertical-align: text-bottom;
+}
+
+.image .title {
+  font-size: 0.85em;
+  margin: 0;
+}
